@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import { minorProjects, majorProjects } from "../data/routes";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { minorProjects } from "../data/routes";
 
-import { FaRegWindowClose } from "react-icons/fa";
-import { IoMdMenu } from "react-icons/io";
+// import { FaRegWindowClose } from "react-icons/fa";
+// import { IoMdMenu } from "react-icons/io";
 
 const MyProjects: React.FC = () => {
   const [loadItems, setLoadItems] = useState<number>(4);
