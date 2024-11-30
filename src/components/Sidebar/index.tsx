@@ -14,7 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <div
-      className={`h-screen bg-gray-800 p-4 text-white transition-transform duration-600 ${
+      className={`h-screen bg-gray-800 p-4 text-white transition-transform duration-600 md:text-nowrap ${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

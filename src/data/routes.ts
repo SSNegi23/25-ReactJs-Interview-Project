@@ -10,7 +10,7 @@ export const minorProjects: RouteConfig[] = [
   { id: 1, path: "accordion", name: "Accordion", component: "Accordion" },
   {
     id: 2,
-    path: "random-color-generator",
+    path: "random-color",
     name: "Random Color Generator",
     component: "RandomColor",
   },

@@ -6,8 +6,15 @@ import MainComponent from "./components/MainComponent";
 import { minorProjects, majorProjects } from "./data/routes";
 import ErrorBoundary from "./components/ErrorBoundary";
 
-const loadComponent = (path: string) =>
-  React.lazy(() => import(`./components/MinorProjects/${path}`));
+// const loadComponent = (path: string) =>
+//   React.lazy(() => import(`./components/MinorProjects/${path}`));
+
+const componentMap: Record<string, React.LazyExoticComponent<any>> = {
+  "Accordion": React.lazy(() => import("./components/MinorProjects/accordion")),
+  "RandomColor": React.lazy(() => import("./components/MinorProjects/random-color")),
+};
+
+const loadComponent = (componentName: string) => componentMap[componentName];
 
 const App: React.FC = () => {
   return (
